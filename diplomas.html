@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diplomas</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap">
+	<link rel="stylesheet" href="main.css">
+	
+	<script src="script.js"></script>
+</head>
+
+<head>
+	<script type="text/javascript">
+		
+
+		function Validate() {
+			var userfill = document.getElementById("user").value;
+			var password = document.getElementById("1stPassword").value;
+
+			var confirmPassword = document.getElementById("ConfirmPassword").value;
+			if (userfill ="Username" ) {
+				if (password != confirmPassword){
+
+				alert("Username is empty or Passwords do not match. perepeshi zanovo po-bratskii ");
+				return false;
+			}
+			else {
+				
+				document.write("Success! Welcome to the site....i guess");
+			}}
+		
+
+		}
+	</script>
+</head>
+<body>
+<container>
+<input type="text" id="user" placeholder="Username"/>
+<input type="password" id="1stPassword"  placeholder="Password" />
+<input type="password" id="ConfirmPassword"  placeholder=" Confirms Password" />
+<input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+</container>
+</body>
+</html>
